@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        tools:context=".Search">
+
+        <ImageView
+            android:id="@+id/ivPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/house_sample" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_rectangle"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvBHName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:paddingLeft="10dp"
+            android:text="Sumicad Boarding House"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:textAlignment="center">
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="169dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:src="@drawable/baseline_place_24" />
+
+            <TextView
+                android:id="@+id/tvLocation"
+                android:layout_width="377dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Balangasan, Pagadian City" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvRate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:paddingLeft="60dp"
+            android:text="Monthly: 1k"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:paddingLeft="60dp"
+            android:text="Room"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvCapacity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:paddingLeft="60dp"
+            android:text="Max 2 people"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvFeatures"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:paddingLeft="60dp"
+            android:text="Outside Bathroom"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+        <Button
+            android:id="@+id/btnRent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#DC6DF4"
+            android:fontFamily="@font/archivo"
+            android:text="Rent"
+            app:cornerRadius="10dp" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

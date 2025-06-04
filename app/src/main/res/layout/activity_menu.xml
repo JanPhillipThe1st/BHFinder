@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Menu">
+
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="155dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#AB98FF"
+        android:text="Search"
+        android:textColor="#17191B"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <Button
+        android:id="@+id/btnMenu"
+        android:layout_width="51dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="#00FFFFFF"
+        android:backgroundTintMode="src_in"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:textAlignment="center"
+        app:icon="@drawable/baseline_more_horiz_24"
+        app:iconGravity="textTop"
+        app:iconSize="30dp"
+        app:iconTint="#1A1B1E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="STUDENT" />
+
+    <Button
+        android:id="@+id/btnList"
+        android:layout_width="51dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="#00FFFFFF"
+        android:backgroundTintMode="src_in"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:textAlignment="center"
+        app:icon="@drawable/baseline_toc_24"
+        app:iconGravity="textTop"
+        app:iconSize="30dp"
+        app:iconTint="#1A1B1E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="STUDENT" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="416dp"
+        android:layout_height="308dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="158dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnStudents"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:backgroundTint="#ffffff"
+                android:backgroundTintMode="screen"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:text="STUDENT"
+                android:textAlignment="center"
+                android:textColor="#FF1A1B1E"
+                app:cornerRadius="100dp"
+                app:icon="@drawable/baseline_face_4_24"
+                app:iconGravity="textTop"
+                app:iconSize="100dp"
+                app:iconTint="#1A1B1E"
+                app:strokeWidth="2dp"
+                tools:text="STUDENT" />
+
+            <Button
+                android:id="@+id/btnFamily"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginLeft="5dp"
+                android:backgroundTint="#ffffff"
+                android:backgroundTintMode="screen"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:text="FAMILY"
+                android:textAlignment="center"
+                android:textColor="#FF1A1B1E"
+                app:cornerRadius="100dp"
+                app:icon="@drawable/baseline_groups_2_24"
+                app:iconGravity="textTop"
+                app:iconSize="100dp"
+                app:iconTint="#1A1B1E"
+                app:strokeWidth="2dp"
+                tools:text="FAMILY" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnRoom"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:backgroundTint="#ffffff"
+                android:backgroundTintMode="screen"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:text="ROOM"
+                android:textAlignment="center"
+                android:textColor="#FF1A1B1E"
+                app:cornerRadius="100dp"
+                app:icon="@drawable/baseline_house_24"
+                app:iconGravity="textTop"
+                app:iconSize="100dp"
+                app:iconTint="#1A1B1E"
+                app:strokeWidth="2dp"
+                tools:text="ROOM" />
+
+            <Button
+                android:id="@+id/btnBedspacer"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginLeft="5dp"
+                android:backgroundTint="#ffffff"
+                android:backgroundTintMode="screen"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:text="BEDSPACER"
+                android:textAlignment="center"
+                android:textColor="#FF1A1B1E"
+                app:cornerRadius="100dp"
+                app:icon="@drawable/baseline_bed_24"
+                app:iconGravity="textTop"
+                app:iconSize="100dp"
+                app:iconTint="#1A1B1E"
+                app:strokeWidth="2dp"
+                tools:text="BEDSPACER" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="BEST FOR"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.88" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="FIND YOUR COMFORTABLE\nROOM"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
